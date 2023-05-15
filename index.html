@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>E-magazine</title>
+		<link rel="icon" href="images/logo.png" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+			
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">EduW@ves</a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						
+						<li><a href="index.html">Home</a></li>
+						<li><a href="drawing.html">Drawing</a></li>
+						<li><a href="poems.html">Poems</a></li>
+						<li><a href="brainwash.html">BrainWash</a></li>
+						<li><a href="quotes.html">Quotes</a></li>
+						<li><a href="articles.html">Articles</a></li>
+						<li><a href="photography.html">Photography</a></li>
+						<li><a href="alumini.html">Alumini</a></li>
+					</ul>
+				</nav>
+							
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+						<section class="post">
+							<article class="post featured">
+								<header class="major">
+									<h1>Home</h1>
+									<h3>click on the thumbnails to get started...</h3>
+									<div class="content">
+										<div class="images">
+											<a href="drawing.html" ><image src="images/pic02.jpg" alt="" /></a>
+											<a href="poems.html" ><image src="images/pic01.jpg" alt="" /></a>
+											<a href="brainwash.html" ><image src="images/pic06.jpg" alt="" /></a>
+											<a href="quotes.html" ><image src="images/pic11.jpg" alt="" /></a>
+											<a href="articles.html" ><image src="images/pic10.jpg" alt="" /></a>
+											<a href="photography.html" ><image src="images/pic03.jpg" alt="" /></a>
+								  </div>
+								</div>
+								</header>
+								<ul class="actions fit small">
+									<li><a class="button primary" href="credits.html">Credits</a></li>
+								</ul>
+							</article>
+						</section>
+					
+					
+
+
+				
+
+			</div>
+<!-- Copyright -->
+<div id="copyright">
+	<ul><li></li><a></a></li></ul>
+</div>
+</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				var indexValue = 0;
+				function slideShow(){
+				  setTimeout(slideShow, 2500);
+				  var x;
+				  const img = document.querySelectorAll("img");
+				  for(x = 0; x < img.length; x++){
+					img[x].style.display = "none";
+				  }
+				  indexValue++;
+				  if(indexValue > img.length){indexValue = 1}
+				  img[indexValue -1].style.display = "block";
+				}
+				slideShow();
+			  </script>
+			  
+	</body>
+</html>
